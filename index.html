@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      section {
+        display: flex;
+        gap: 10px;
+        height: 600px;
+      }
+      section > div {
+        border-radius: 20px;
+        min-width: 300px;
+        height: 100%;
+        background-color: #f4f5f7;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      .Hide{
+        display: none;
+      }
+      .Show{
+        display: block;
+      }
+      input{
+        height: 30px;
+      }
+      .card{
+        background-color: white;
+        padding: 10px 4px;
+        display: flex;
+        justify-content: space-between;
+        box-shadow: 1px 1px 2px gray;
+      }
+      .cards{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        border: 2px solid blue;
+        padding: 10px 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div id="todo">
+        <h3>To do</h3>
+        <button>create issue</button>
+        <input  class="Hide">
+        <div class="cards"></div>
+      </div>
+      <div id="in-prograss">
+        <h3>In-prograss</h3>
+        <button>create issue</button>
+        <input  class="Hide">
+        <div class="cards"></div>
+      </div>
+      <div id="done">
+        <h3>Done</h3>
+        <button>create issue</button>
+        <input  class="Hide">
+        <div class="cards"></div>
+      </div>
+    </section>
+    <script src="./script.js"></script>
+  </body>
+</html>
